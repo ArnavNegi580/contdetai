@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Details</title>
+
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial;background:#eee;margin:0;padding:20px}
+form{
+    max-width:600px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+h2{text-align:center}
+input,button{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.row{display:flex;gap:10px}
+button{
+    background:#007bff;
+    color:white;
+    border:0;
+    cursor:pointer;
+}
+button:hover{background:#0056b3}
+
+@media(max-width:600px){
+    .row{flex-direction:column;gap:0}
+    form{padding:18px}
+}
+</style>
+</head>
+
+<body>
+
+<form>
+<h2>Contact Details</h2>
+
+<div class="row">
+<input type="text" placeholder="First Name" required>
+<input type="text" placeholder="Last Name" required>
+</div>
+
+<input type="text" placeholder="Street Address" required>
+
+<div class="row">
+<input type="text" placeholder="Town / City" required>
+<input type="text" placeholder="Postcode / ZIP" required>
+</div>
+
+<div class="row">
+<input type="tel" placeholder="Telephone">
+<input type="tel" placeholder="Mobile Number" required>
+</div>
+
+<input type="email" placeholder="Email Address" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
+
